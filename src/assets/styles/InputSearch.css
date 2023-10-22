@@ -1,0 +1,25 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.search-input {
+  width: 30rem;
+  height: 100%;
+  padding: 5px;
+  border: 1px solid #67f58b;
+  border-radius: 5px;
+}
+
+.buscar {
+  width: 5rem;
+  height: 100%;
+  margin-left: 1rem;
+  border: 1px solid #67f58b;
+  border-radius: 5px;
+}
+
+.search-button {
+  @apply .btn-search .buscar;
+}
