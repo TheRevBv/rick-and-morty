@@ -176,3 +176,25 @@ body {
 .mb-5 {
   margin-bottom: 5rem;
 }
+
+.alert {
+  margin: 0;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.alert-success {
+  background: #1ba94c;
+}
+
+.alert-danger {
+  background: #d63d2e;
+}
