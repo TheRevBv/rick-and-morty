@@ -16,6 +16,9 @@
   border-radius: 50%;
   background-color: #fff;
   cursor: pointer;
+  font-weight: bold;
+  padding: 2rem;
+  font-size: 1.2rem;
 }
 
 .page:hover {
@@ -30,6 +33,9 @@
   height: 30px;
   margin: 0 5px;
   border-radius: 50%;
-  background-color: #ef8172;
+  background-color: #046d40;
   cursor: pointer;
+  font-weight: bold;
+  border: none;
+  padding: 2rem;
 }

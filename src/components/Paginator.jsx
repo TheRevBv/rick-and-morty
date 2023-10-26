@@ -1,24 +1,23 @@
+/* eslint-disable react/prop-types */
 import "../assets/styles/Paginator.css";
 
-const Paginator = ({ page, setPage, pages }) => {
-  const nextPage = () => {
-    if (page < pages) {
-      setPage(page + 1);
-      //   regApi();
+const Paginator = ({ page, pages, setPage }) => {
+  const handlePrev = () => {
+    if (page > 1) {
+      setPage(page - 1);
     }
   };
 
-  const prevPage = () => {
-    if (page > 1) {
-      setPage(page - 1);
-      //   regApi();
+  const handleNext = () => {
+    if (page < pages) {
+      setPage(page + 1);
     }
   };
 
   return (
     <div className="paginator">
       {page > 1 ? (
-        <button onClick={prevPage} className="btn-paginator">
+        <button onClick={handlePrev} className="btn-paginator">
           {"< "}
         </button>
       ) : (
@@ -28,7 +27,7 @@ const Paginator = ({ page, setPage, pages }) => {
       <span className="page">{page}</span>
 
       {page < pages ? (
-        <button onClick={nextPage} className="btn-paginator">
+        <button onClick={handleNext} className="btn-paginator">
           {"> "}
         </button>
       ) : (

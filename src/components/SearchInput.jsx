@@ -1,4 +1,5 @@
-// import "../assets/styles/InputSearch.css";
+/* eslint-disable react/prop-types */
+import "../assets/styles/InputSearch.css";
 
 const SearchInput = ({ setSearch, regApi }) => {
   return (
@@ -9,7 +10,7 @@ const SearchInput = ({ setSearch, regApi }) => {
         className="search-input"
         onChange={(e) => setSearch(e.target.value)}
       />
-      <button className="search-button" onClick={regApi}>
+      <button className="search-btn" onClick={regApi}>
         Buscar
       </button>
     </div>
